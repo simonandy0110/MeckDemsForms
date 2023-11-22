@@ -1,0 +1,131 @@
+body, html {
+    background-color: transparent !important;
+    height: 100%; 
+}
+
+/* removes main white background of body, header*/
+.at-inner {
+    background-color: transparent !important;
+}
+.multistep-layout .HeaderHtml h1 {
+    background-color: transparent !important;
+}
+
+/* text styling */
+/** lv 1 **/
+h1 { /* Donate title */
+    color: #003d70 !important;
+    text-align: center !important; 
+    font-family:"Alternate Gothic","Impact",sans-serif !important;
+    font-size: 50px !important;
+}
+header.at-title { /* Join and Volunteer titles */
+    color: #003d70 !important;
+    font-family:"Alternate Gothic","Impact",sans-serif !important;
+    font-size: 50px !important;
+}
+.at fieldset legend { /* Contact Information subtitle */
+    color: #003d70 !important;
+    font-family:"Alternate Gothic","Impact",sans-serif !important;
+    font-size: 50px !important;
+    font-variant-caps: all-small-caps !important;
+}
+.at-markup.HeaderHtml p strong { /*volunteer opportunities list title */
+    color: #003d70 !important;
+    font-family:"Alternate Gothic","Impact",sans-serif !important;
+    font-size: 50px !important;
+    font-variant-caps: all-small-caps !important;
+}
+/** lv 2 **/
+h2, h3, h4 { /* subtitles */
+    color: #003d70 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    text-align: left !important; 
+}
+/** lv 3 **/
+p {
+    color: #003d70 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    text-align: left !important; 
+}
+ul {
+    color: #003d70 !important;
+}
+.at-markup.HeaderHtml ul li span { /* volunteer opportunities list */
+    color: #003d70 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    text-align: left !important; 
+}
+.at-markup.HeaderHtml p span { /* volunteer opportunities caption */
+    color: #003d70 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    text-align: left !important; 
+}
+.at-cover-costs-info strong { /* cover additional costs in donation */
+    color: #003d70 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    font-size: 1em !important;
+}
+/* form text */
+/* form inputs */
+
+
+/* fonts */ 
+@font-face {
+    font-family: 'Gotham Medium';
+    src: URL('/fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: URL('/fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: URL('/fonts/GothamMediumItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: URL('/fonts/GothamBoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: URL('/fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: URL('/fonts/Gotham-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alternate Gothic';
+    src: URL('/fonts/alternate-gothic-no3-d.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentinel Italic';
+    src: URL('/fonts/Sentinel-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
