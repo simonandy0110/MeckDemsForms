@@ -2,77 +2,124 @@ body, html {
     background-color: transparent !important;
     height: 100%; 
 }
-
 /* removes main white background of body, header*/
 .at-inner {
     background-color: transparent !important;
+    max-width: 800px;
 }
 .multistep-layout .HeaderHtml h1 {
     background-color: transparent !important;
 }
 
+
 /* text styling */
 /** lv 1 **/
-h1 { /* Donate title */
-    color: #003d70 !important;
-    text-align: center !important; 
+h1, header.at-title { /* form titles */
+    color: #283351 !important;
+    text-align: left !important; 
     font-family:"Alternate Gothic","Impact",sans-serif !important;
-    font-size: 50px !important;
+    font-size: 55px !important;
 }
-header.at-title { /* Join and Volunteer titles */
-    color: #003d70 !important;
-    font-family:"Alternate Gothic","Impact",sans-serif !important;
-    font-size: 50px !important;
-}
-.at fieldset legend { /* Contact Information subtitle */
-    color: #003d70 !important;
-    font-family:"Alternate Gothic","Impact",sans-serif !important;
-    font-size: 50px !important;
-    font-variant-caps: all-small-caps !important;
-}
-.at-markup.HeaderHtml p strong { /*volunteer opportunities list title */
-    color: #003d70 !important;
-    font-family:"Alternate Gothic","Impact",sans-serif !important;
-    font-size: 50px !important;
-    font-variant-caps: all-small-caps !important;
+.at fieldset legend, .at-markup.HeaderHtml p strong { /* Contact Information and Opportunities Include */
+    color: #283351 !important;
+    font-family:"Sentinel Italic","Impact",sans-serif !important;
+    font-size: 36px !important;
 }
 /** lv 2 **/
 h2, h3 { /* subtitles */
-    color: #003d70 !important;
+    color: #283351 !important;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
-    font-size: 24px;
+    font-size: 18px;
 }
 /** lv 3 **/
 h4, p {
     color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
-    font-size: 16px;
+    font-size: 15px;
     font-weight: normal;
 }
 ul {
     color: #283351 !important;
+    font-size: 15px;
 }
 .at-markup.HeaderHtml ul li span { /* volunteer opportunities list */
     color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
+    font-size: 15px;
 }
 .at-markup.HeaderHtml p span { /* volunteer opportunities caption */
     color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
+    font-size: 15px;
 }
-.at-cover-costs-info strong { /* cover additional costs in donation */
-    color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
-    font-size: 1em !important;
-}
+
 /* form text */
-/* form inputs */
+.at-row>[class^="at-text"] { /* form input field titles */
+    color: #283351;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 18px;
+  }
+  .at-row>[class^="at-date"] {
+    color: #283351;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 18px;
+  }
+    .at-row>[class^="at-select"] { /* dropdown menu field title */
+    color: #283351;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 18px;
+  }
+  .at-markup.LegalDescription p, .at-markup.SmsLegalDisclaimer p, .at-markup.LegalHeaderHtml p { /* legal disclaimers */
+    color: #283351 !important;
+    font-family:"Sentinel Italic","Times New Roman",serif !important;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label{ /* checkbox text */
+    color: #283351;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 18px;
+  }
+.step-title{
+    color: #283351 !important;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif;
+    font-size: 15px;
+}
 
-
+  /* form inputs */
+  .at select { /* dropdown menu placeholder text */
+    color: #283351;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif;
+    line-height: 200%;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .at option:disabled { /* dropdown menu placeholder text */
+    color: #cbccd1;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif;
+    line-height: 200%;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  /* ui */
+  .at label.error { /* errors */
+    color: #d64000;
+  }
+  .at input[type="checkbox"]:checked+span:before { /* checkbox color */
+    background-color: #38aae1;
+    border-color: #38aae1;
+  }
+  .at .at-steps { /* navbar bg color */
+    background: rgba(204, 205, 209, .2)
+  }
+  ol.at-steps.clearfix { /* 1, 2, 3 step circles */
+    font-family:monospace;
+    font-size: 18px;
+  }
 /* fonts */ 
 @font-face {
     font-family: 'Gotham Medium';
