@@ -105,22 +105,25 @@ ul {
   input:where([type="text"], [type="tel"], [type="email"]):focus{ /* focused input box */
     box-shadow: 0px 0px 4px 1px rgba(40,51,81,0.2) !important;
   }
-
   /* ui */
   .error { /* error text */
     color: #d64000;
   }
-  .at input[type="checkbox"]:not(:checked) { /* checkbox color */
-    border: 1px solid red !important;
+  .at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
+    appearance: none;
+    border: 1px solid #cbccd1;
   }
-  .at input[type="checkbox"]:checked+span:before { /* checked checkbox color */
+  .at input[type=checkbox]:checked+span:before { /* checked checkbox color */
     background-color: #38aae1;
     border-color: #38aae1;
   }
-  .radios input[type=radio] { /* radio select color */
+  .at input[type=checkbox]:focus+span:before { /* checkbox focus */
+    box-shadow: 0px 0px 4px 1px rgba(40,51,81,0.2) !important;
+  }
+  .radios input[type=radio] { /* selected radio */
     accent-color: #d64000;
   }
-  input[type="radio"]:not(:checked) { /* radio select color */
+  input[type="radio"]:not(:checked) { /* unselected radio */
     appearance: none;
     margin-bottom: 0;
     width: 1em;
