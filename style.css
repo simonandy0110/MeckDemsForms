@@ -40,10 +40,20 @@ h4, p {
     font-size: 15px;
     font-weight: normal;
 }
+a {
+    color: #23589b !important;
+}
 small {
     color: #a2abb4 !important;
     font-variant: all-small-caps;
     font-size: 18px;
+}
+label {
+    color: #283351;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif;
+    text-align: left; 
+    font-size: 15px;
+    font-weight: normal;
 }
 ul {
     color: #283351 !important;
@@ -81,14 +91,13 @@ ul {
     font-size: 18px;
     line-height: 140%; /* keeps text inline w button element */
   }
-  .at select { /* dropdown menu options */
+  .at select, .at select:focus { /* dropdown menu options */
     color: #283351;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
     font-size: 15px;
-    text-transform: uppercase;
     border-color: #cbccd1;
   }
-  .at select:invalid,.at-text input::placeholder{ /* placeholder text */
+  .at select:invalid, .at-text input::placeholder{ /* placeholder text */
     color: #a2abb4 !important;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
     font-size: 15px;
@@ -109,21 +118,42 @@ ul {
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 25px;
   }
-  label.label-amount { /* donation amount labels */
+  label.label-amount, label.label-amount a { /* donation amount buttons */
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    border-radius: 10px !important;
+    transition: all 300ms ease-out;
   }
-  .error { /* error message */
-    color: #d64000;
-  }
-  /* ui */
 
+
+  /* ui */
+  .error { /* error message */
+    color: #d64000 !important;
+    & input {
+        border: 2px solid #d64000 !important;
+        background-color: rgba(255, 77, 0, .05) !important;
+    }
+  }
   .at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
     appearance: none;
     border: 1px solid #cbccd1;
+    background-color: #fff;
+    transition: all 300ms ease-out;
   }
-  .at input[type=checkbox]:checked+span:before { /* checked checkbox color */
+  .at input[type=checkbox]:checked+span:before { /* checked checkbox */
     background-color: #D64000;
-    border-color: #D64000;
+    border: 1px solid #d64000;
+    transition: all 300ms ease-out;
+  }
+  .at input[type=checkbox]:active+span:before, .at input[type=checkbox]:checked:hover+span:before{ /* checked hover */
+    background-color: #ff4d00;
+    border: 1px solid #ff4d00;
+    transition: all 300ms ease-out;
+  }
+  .at input[type=checkbox]:not(:checked):hover+span:before { /* unchecked hover */
+    appearance: none;
+    border: 1px solid #283351;
+    background-color: #f1f3f5;
+    transition: all 300ms ease-out;
   }
   input[type=radio], input[type=radio]:checked { /* selected radio */
     appearance: none;
@@ -133,6 +163,7 @@ ul {
     border-radius: 100%;
     border: 4px solid #D64000;
     margin-bottom: 0px;
+    transition: all 300ms ease-out;
   }
   input[type="radio"]:not(:checked) { /* unselected radio */
     appearance: none;
@@ -142,29 +173,64 @@ ul {
     border: 1px solid #cbccd1;
     background-color: #fff;
     margin-bottom: 0px;
+    transition: all 300ms ease-out;
   }
-  input:where([type="text"], [type="tel"], [type="email"]):focus, 
-  .at input[type=checkbox]:focus+span:before, select:focus{ /* focus */
-        box-shadow: 0px 0px 4px 1px red !important;
-    }
-  .radios input:focus {
-    box-shadow: 0px 0px 4px 1px red !important;
-    border-radius: 100%;
+  input[type=radio]:active, input[type=radio]:checked:hover{ /* selected radio hover */
+    background-color: #fff;
+    border: 4px solid #ff4d00;
+    transition: all 300ms ease-out;
   }
-  .at .at-steps { /* navbar bg color */
-    background: rgba(204, 205, 209, .2)
+  input[type="radio"]:not(:checked):hover { /* unselected radio hover */
+    appearance: none;
+    border: 1px solid #283351;
+    background-color: #f1f3f5;
+    transition: all 300ms ease-out;
   }
-  ol.at-steps.clearfix { /* 1, 2, 3 step circles */
+  input:where([type="text"], [type="tel"], [type="email"], [type="number"], [type="radio"]):focus,
+  .at input[type="checkbox"]:focus+span:before, select:focus { /* focus drop shadow */
+    box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.4) !important;
+  }
+  .at .at-steps { /* donation navbar */
+    background: #f1f3f5; 
+  }
+  ol.at-steps.clearfix { /* donation step indicators */
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
-    line-height: 110%; /* centers number within circle */
+    line-height: 120%; /* centers number within circle */
   }
-  .step-title{ /* donation steps */
+  .at .at-step>*:before{ /* donation step circles */
+    border: none;
+    transition: all 300ms ease-out;
+  }
+  .at .at-step.active { /* donation step active indicator */
+    border-bottom-color: #38aae1;
+    transition: all 300ms ease-out;
+  }
+  .step-title { /* donation step titles */
     color: #283351 !important;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 15px;
+    transition: all 300ms ease-out;
   }
-  
+  input:-webkit-autofill { /* removes autofill bg color */
+    -webkit-text-fill-color: #283351;
+    -webkit-box-shadow: 0 0 0 100px white inset !important;
+    -webkit-font-feature-settings: on;
+  }
+  .at-btn-radio-wrapper input, .at-btn-radio-wrapper label { /* credit card/bank account buttons */
+    color: #283351 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 18px;
+    font-variant: all-small-caps;
+    border: 1px solid #cbccd1 !important;
+  }
+  .at-btn-radio:hover{
+    border: 1px solid #283351 !important;
+  }
+  label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
+    transition: all 300ms ease-out;
+  }
+
 /* fonts */ 
 @font-face {
     font-family: 'Gotham Medium';
