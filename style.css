@@ -40,6 +40,11 @@ h4, p {
     font-size: 15px;
     font-weight: normal;
 }
+small {
+    color: #a2abb4 !important;
+    font-variant: all-small-caps;
+    font-size: 18px;
+}
 ul {
     color: #283351 !important;
     font-size: 15px;
@@ -58,17 +63,7 @@ ul {
 }
 
 /* form text */
-.at-row>[class^="at-text"] { /* form input field titles */
-    color: #283351;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-  }
-  .at-row>[class^="at-date"] {
-    color: #283351;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-  }
-    .at-row>[class^="at-select"] { /* dropdown menu field title */
+  .at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"] { /* input field titles */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
@@ -79,39 +74,59 @@ ul {
     font-size: 18px;
     font-style: italic;
   }
-  .at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label{ /* checkbox text */
+  .at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label, .updateMyProfileSection .text,
+  .radios label { /* checkbox/radio text */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
+    line-height: 200%; /* keeps text inline w button element */
   }
-.step-title{
-    color: #283351 !important;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    font-size: 15px;
-}
+
 
   /* form inputs */
-  .at select { /* dropdown menu placeholder text */
+  .at select { /* dropdown menu options */
     color: #283351;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    line-height: 200%;
     font-size: 15px;
     text-transform: uppercase;
+    border-color: #cbccd1;
   }
-  .at option:disabled { /* dropdown menu placeholder text */
-    color: #cbccd1;
+  .at select:invalid,   input::placeholder{ /* placeholder text */
+    color: #a2abb4 !important;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    line-height: 200%;
     font-size: 15px;
-    text-transform: uppercase;
   }
+  input[type=text], input[type=tel], input[type=email] { /* input box */
+    color: #283351 !important;
+    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
+    font-size: 15px !important;
+    border-color: #cbccd1 !important;
+  }
+  input:where([type="text"], [type="tel"], [type="email"]):focus{ /* focused input box */
+    box-shadow: 0px 0px 4px 1px rgba(40,51,81,0.2) !important;
+  }
+
   /* ui */
-  .at label.error { /* errors */
+  .error { /* error text */
     color: #d64000;
   }
-  .at input[type="checkbox"]:checked+span:before { /* checkbox color */
+  .at input[type="checkbox"]:not(:checked) { /* checkbox color */
+    border: 1px solid red !important;
+  }
+  .at input[type="checkbox"]:checked+span:before { /* checked checkbox color */
     background-color: #38aae1;
     border-color: #38aae1;
+  }
+  .radios input[type=radio] { /* radio select color */
+    accent-color: #d64000;
+  }
+  input[type="radio"]:not(:checked) { /* radio select color */
+    appearance: none;
+    margin-bottom: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    border: 1px solid #cbccd1;
   }
   .at .at-steps { /* navbar bg color */
     background: rgba(204, 205, 209, .2)
@@ -120,6 +135,12 @@ ul {
     font-family:monospace;
     font-size: 18px;
   }
+  .step-title{ /* donation steps */
+    color: #283351 !important;
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 15px;
+  }
+  
 /* fonts */ 
 @font-face {
     font-family: 'Gotham Medium';
@@ -151,7 +172,7 @@ ul {
 
 @font-face {
     font-family: 'Gotham Book';
-    src: URL('/fonts/Gotham-Book.ttf') format('truetype');
+    src: URL('/fonts/Gotham-Book.otf') format('opentype');
     font-weight: lighter;
     font-style: normal;
 }
