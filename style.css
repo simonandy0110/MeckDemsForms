@@ -62,7 +62,7 @@ ul {
     font-size: 15px;
 }
 
-/* form text */
+/* form content */
   .at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"] { /* input field titles */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
@@ -75,15 +75,12 @@ ul {
     font-style:italic;
   }
   .at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label, .updateMyProfileSection .text,
-  .radios label { /* checkbox/radio text */
+  .radios label { /* checkbox/radio labels */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
     line-height: 140%; /* keeps text inline w button element */
   }
-
-
-  /* form inputs */
   .at select { /* dropdown menu options */
     color: #283351;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
@@ -96,16 +93,17 @@ ul {
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
     font-size: 15px;
   }
-  input[type=text], input[type=tel], input[type=email] { /* input box */
+  input[type=text], input[type=tel], input[type=email] { /* input boxes */
     color: #283351 !important;
     font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     font-size: 15px !important;
     border-color: #cbccd1 !important;
   }
-  input[type=number]{ /* custom donation amt entry */
+  input[type=number]{ /* custom donation amount input */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
     font-size: 25px !important;
+    border-color: #cbccd1 !important;
   }
   input[type=number]::placeholder { /* custom donation placeholder */
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
@@ -114,10 +112,11 @@ ul {
   label.label-amount { /* donation amount labels */
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
   }
-  /* ui */
-  .error { /* error text */
+  .error { /* error message */
     color: #d64000;
   }
+  /* ui */
+
   .at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
     appearance: none;
     border: 1px solid #cbccd1;
@@ -126,7 +125,6 @@ ul {
     background-color: #D64000;
     border-color: #D64000;
   }
- 
   input[type=radio], input[type=radio]:checked { /* selected radio */
     appearance: none;
     background-color: #fff;
@@ -145,11 +143,8 @@ ul {
     background-color: #fff;
     margin-bottom: 0px;
   }
-
-    input:where([type="text"], [type="tel"], [type="email"]):focus, 
-    .at input[type=checkbox]:focus+span:before, 
-    select:focus
-     { /* focus */
+  input:where([type="text"], [type="tel"], [type="email"]):focus, 
+  .at input[type=checkbox]:focus+span:before, select:focus{ /* focus */
         box-shadow: 0px 0px 4px 1px red !important;
     }
   .radios input:focus {
