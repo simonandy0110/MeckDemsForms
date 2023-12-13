@@ -14,7 +14,7 @@ body, html {
 
 /* text styling */
 /** lv 1 **/
-h1, header.at-title { /* form titles */
+h1, h2, header.at-title { /* form titles */
     color: #283351 !important;
     text-align: left !important; 
     font-family:"Alternate Gothic","Impact",sans-serif !important;
@@ -26,7 +26,7 @@ h1, header.at-title { /* form titles */
     font-size: 36px !important;
 }
 /** lv 2 **/
-h2, h3 { /* subtitles */
+h3 { /* subtitles */
     color: #283351 !important;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
@@ -73,7 +73,7 @@ ul {
 }
 
 /* form content */
-  .at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"] { /* input field titles */
+  .at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"], .oa-input-label { /* input field titles */
     color: #283351;
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
