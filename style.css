@@ -20,7 +20,7 @@ h1, h2, header.at-title { /* form titles */
     font-family:"Alternate Gothic","Impact",sans-serif !important;
     font-size: 55px !important;
 }
-.at fieldset legend, .at-markup.HeaderHtml p strong { /* Contact Information and Opportunities Include */
+.at fieldset legend, .at-markup.HeaderHtml p strong { /* "Contact Information" and "Opportunities Include" */
     color: #283351 !important;
     font-family:"Sentinel Italic","Impact",sans-serif !important;
     font-size: 36px !important;
@@ -33,7 +33,7 @@ h3 { /* subtitles */
     font-size: 18px;
 }
 /** lv 3 **/
-h4, p {
+h4, p, .at-markup.HeaderHtml p {
     color: #283351 !important;
     font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     text-align: left !important; 
@@ -140,8 +140,8 @@ ul {
     transition: all 300ms ease-out;
   }
   .at input[type=checkbox]:checked+span:before { /* checked checkbox */
-    background-color: #D64000;
-    border: 1px solid #d64000;
+    background-color: #1e8fc8;
+    border: 1px solid #1e8fc8;
     transition: all 300ms ease-out;
   }
   input[type=radio], input[type=radio]:checked { /* selected radio */
@@ -150,7 +150,7 @@ ul {
     width: 1em;
     height: 1em;
     border-radius: 100%;
-    border: 4px solid #D64000;
+    border: 4px solid #1e8fc8;
     margin-bottom: 0px;
     transition: all 300ms ease-out;
   }
@@ -207,8 +207,8 @@ ul {
     border: 1px solid #283351 !important;
   }
   .at input[type=checkbox]:active+span:before, .at input[type=checkbox]:checked:hover+span:before{ /* checked box hover */
-    background-color: #ff4d00;
-    border: 1px solid #ff4d00;
+    background-color: #38aae1;
+    border: 1px solid #38aae1;
     transition: all 300ms ease-out;
   }
   .at input[type=checkbox]:not(:checked):hover+span:before { /* unchecked box hover */
@@ -219,7 +219,7 @@ ul {
   }
   input[type=radio]:active, input[type=radio]:checked:hover{ /* selected radio hover */
     background-color: #fff;
-    border: 4px solid #ff4d00;
+    border: 4px solid #38aae1;
     transition: all 300ms ease-out;
   }
   input[type="radio"]:not(:checked):hover { /* unselected radio hover */
