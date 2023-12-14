@@ -21,7 +21,7 @@ h1, h2, header.at-title { /* titles */
 }
 .at fieldset legend, .at-markup.HeaderHtml p strong, legend.at-legend { /* "Contact Information" and "Opportunities Include" */
   color: #283351 !important;
-  font-family:"Sentinel Italic","Impact",sans-serif !important;
+  font-family:"Sentinel Italic","Times New Roman",serif !important;
   font-size: 36px !important;
 }
 h3 { /* subtitles */
