@@ -85,7 +85,9 @@ ul {
     color: #283351;
     font-family:"Gotham Book","Trebuchet MS",sans-serif;
     font-size: 15px;
-    border-color: #cbccd1;
+    border: none !important;
+    border-bottom: 1px solid rgba(40, 51, 82, .4) !important;
+    border-radius: 0px !important;
   }
   .at select:invalid, .at-text input::placeholder{ /* placeholder text */
     color: #a2abb4 !important;
@@ -96,7 +98,9 @@ ul {
     color: #283351 !important;
     font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
     font-size: 15px !important;
-    border-color: #cbccd1 !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(40, 51, 82, .4) !important;
+    border-radius: 0px !important;
   }
   input[type=number]{ /* custom donation amount input */
     color: #283351;
@@ -196,7 +200,7 @@ ul {
     font-family:"Gotham Medium","Trebuchet MS",sans-serif;
     font-size: 18px;
     font-variant: all-small-caps;
-    border: 1px solid #cbccd1 !important;
+    border: 1px solid rgba(40, 51, 82, .4) !important;
   }
 
   /* interactivity */
@@ -206,9 +210,12 @@ ul {
   .at-btn-radio:hover{
     border: 1px solid #283351 !important;
   }
-  input:where([type="text"], [type="tel"], [type="email"], [type="number"], [type="radio"]):focus,
-  .at input[type="checkbox"]:focus+span:before, select:focus { /* focus  */
-
+  input:where([type="text"], [type="tel"], [type="email"], [type="number"]):focus, select:focus { /* focus on input */
+    border-bottom: 1px solid rgba(40, 51, 82, 1) !important;
+    box-shadow: none !important;
+  }
+  input:where([type="text"], [type="tel"], [type="email"], [type="number"]):hover, select:hover { /* hover on input */
+    border-bottom: 2px solid rgba(40, 51, 82, .4) !important;
   }
 
 
