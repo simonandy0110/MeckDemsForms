@@ -19,7 +19,7 @@ h1, h2, header.at-title { /* titles */
   font-family:"Alternate Gothic","Impact",sans-serif !important;
   font-size: 55px !important;
 }
-.at fieldset legend, .at-markup.HeaderHtml p strong { /* "Contact Information" and "Opportunities Include" */
+.at fieldset legend, .at-markup.HeaderHtml p strong, legend.at-legend { /* "Contact Information" and "Opportunities Include" */
   color: #283351 !important;
   font-family:"Sentinel Italic","Impact",sans-serif !important;
   font-size: 36px !important;
