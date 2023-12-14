@@ -5,7 +5,7 @@ body, html {
 /* removes main white background of body, header*/
 .at-inner {
   background-color: transparent !important;
-  max-width: 800px;
+   /*max-width: 800px;*/
 }
 .multistep-layout .HeaderHtml h1 {
   background-color: transparent !important;
@@ -105,7 +105,7 @@ input[type=number]{ /* custom donation amount input */
 label.label-amount, label.label-amount a { /* donation amount buttons */
   font-family:"Gotham Medium","Trebuchet MS",sans-serif;
   border-radius: 5px !important;
-  transition: all 200ms ease-out;
+  transition: all 250ms ease-out;
 }
 
 
@@ -161,9 +161,37 @@ ol.at-steps.clearfix { /* donation step indicators */
   border: 1px solid rgba(40, 51, 82, .4) !important;
 }
 
+input[type="submit"], button.submitStep.btn-at.btn-at-primary, 
+a.nextStep.btn-at.btn-at-primary { /* next/submit buttons */
+  background-color: #d64000 !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+  font-size: 20px !important;
+  min-height: 44px;
+  min-width: 150px;
+  box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
+  transition: all 250ms ease-out;
+  &:hover {
+    background-color: #ff4d00 !important;
+  }
+}
+a.prevStep.btn-at.btn-at-link{ /* back button */
+  color: #283351 !important;
+  transition: all 250ms ease-out;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 20px;
+  font-variant: all-small-caps;
+  &:hover {
+    color: #23589b !important;
+  }
+}
+
+
+
 /* interactivity */
 label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
-  transition: all 200ms ease-out;
+  transition: all 250ms ease-out;
 }
 input:where([type="text"], [type="tel"], [type="email"], 
 [type="number"]&:not(.edit-otheramount)):focus, select:focus { /* input focus */
