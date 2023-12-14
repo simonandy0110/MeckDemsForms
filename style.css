@@ -13,8 +13,7 @@ body, html {
 
 
 /* text styling */
-/** lv 1 **/
-h1, h2, header.at-title { /* form titles */
+h1, h2, header.at-title { /* titles */
   color: #283351 !important;
   text-align: left !important; 
   font-family:"Alternate Gothic","Impact",sans-serif !important;
@@ -25,23 +24,22 @@ h1, h2, header.at-title { /* form titles */
   font-family:"Sentinel Italic","Impact",sans-serif !important;
   font-size: 36px !important;
 }
-/** lv 2 **/
 h3 { /* subtitles */
   color: #283351 !important;
   font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
   text-align: left !important; 
   font-size: 18px;
 }
-/** lv 3 **/
-h4, p, .at-markup.HeaderHtml p, .at-markup.HeaderHtml ul li span, .at-markup.HeaderHtml p span {
+h4, p, .at-markup.HeaderHtml p, .at-markup.HeaderHtml ul li span, .at-markup.HeaderHtml p span { /* content */
   color: #283351 !important;
   font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
   text-align: left !important; 
   font-size: 15px;
   font-weight: normal;
 }
-a {
+a { /* links */
   color: #23589b !important;
+  text-decoration: underline;
 }
 small {
   color: #a2abb4 !important;
@@ -55,9 +53,10 @@ label {
   font-size: 15px;
   font-weight: normal;
 }
-ul {
+ul, .step-title {
   color: #283351 !important;
   font-size: 15px;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
 }
 
 /* form content */
@@ -98,11 +97,10 @@ input[type=number]{ /* custom donation amount input */
   color: #283351;
   font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
   font-size: 25px !important;
-  border-color: #cbccd1 !important;
-}
-input[type=number]::placeholder { /* custom donation placeholder */
-  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-  font-size: 25px;
+  &::placeholder {
+    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+    font-size: 25px;
+  }
 }
 label.label-amount, label.label-amount a { /* donation amount buttons */
   font-family:"Gotham Medium","Trebuchet MS",sans-serif;
@@ -155,17 +153,7 @@ ol.at-steps.clearfix { /* donation step indicators */
 .at .at-step.active { /* donation active step indicator */
   border-bottom-color: #38aae1;
 }
-.step-title { /* donation step titles */
-  color: #283351 !important;
-  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-  font-size: 15px;
-}
-input:-webkit-autofill, select:-webkit-autofill { /* removes autofill bg color */
-  -webkit-text-fill-color: #283351;
-  -webkit-box-shadow: 0 0 0 100px white inset !important;
-  -webkit-font-feature-settings: on;
-}
-.at-btn-radio-wrapper input, .at-btn-radio-wrapper label { /* credit card/bank account buttons */
+.at-btn-radio-wrapper input, .at-btn-radio-wrapper label { /* payment buttons */
   color: #283351 !important;
   font-family:"Gotham Medium","Trebuchet MS",sans-serif;
   font-size: 18px;
@@ -177,14 +165,13 @@ input:-webkit-autofill, select:-webkit-autofill { /* removes autofill bg color *
 label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
   transition: all 200ms ease-out;
 }
-.at-btn-radio:hover{
-  border: 1px solid #283351 !important;
-}
-input:where([type="text"], [type="tel"], [type="email"], [type="number"]&:not(.edit-otheramount)):focus, select:focus { /* focus on input */
+input:where([type="text"], [type="tel"], [type="email"], 
+[type="number"]&:not(.edit-otheramount)):focus, select:focus { /* input focus */
   border-bottom: 1px solid rgba(40, 51, 82, 1) !important;
   box-shadow: none !important;
 }
-input:where([type="text"], [type="tel"], [type="email"], [type="number"]&:not(.edit-otheramount)):hover, select:hover { /* hover on input */
+input:where([type="text"], [type="tel"], [type="email"], 
+[type="number"]&:not(.edit-otheramount)):hover, select:hover { /* input hover */
   border-bottom: 2px solid rgba(40, 51, 82, .4) !important;
 }
 .at input[type=checkbox]:hover+span:before { /* checkbox hover */
@@ -205,11 +192,7 @@ input[type=radio]:hover { /* radio hover */
     border: none;
   }
 }
-input[type=radio]:active {
-  background-color: #ff4d00;
-  border: 3px solid #F5F5F6;
-  outline: 1px solid rgba(40, 51, 82, 1);
-}
+
 
 
 /* fonts */ 
@@ -219,49 +202,42 @@ input[type=radio]:active {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Gotham Medium';
   src: URL('/fonts/Gotham-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Gotham Medium';
   src: URL('/fonts/GothamMediumItalic.ttf') format('truetype');
   font-style: italic;
   font-weight: normal;
 }
-
 @font-face {
   font-family: 'Gotham Medium';
   src: URL('/fonts/GothamBoldItalic.ttf') format('truetype');
   font-style: italic;
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Gotham Book';
   src: URL('/fonts/Gotham-Book.otf') format('opentype');
   font-weight: lighter;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Gotham Black';
   src: URL('/fonts/Gotham-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Alternate Gothic';
   src: URL('/fonts/alternate-gothic-no3-d.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Sentinel Italic';
   src: URL('/fonts/Sentinel-MediumItalic.ttf') format('truetype');
