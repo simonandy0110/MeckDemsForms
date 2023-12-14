@@ -107,7 +107,7 @@ input[type=number]::placeholder { /* custom donation placeholder */
 label.label-amount, label.label-amount a { /* donation amount buttons */
   font-family:"Gotham Medium","Trebuchet MS",sans-serif;
   border-radius: 5px !important;
-  transition: all 300ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 
@@ -123,7 +123,6 @@ label.label-amount, label.label-amount a { /* donation amount buttons */
   border: 1px solid rgba(40, 51, 82, .4) !important;
   box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
   background-color: #fff !important;
-  transition: all 300ms ease-out;
 }
 .at input[type=checkbox]:checked+span:after { /*  checkmark */
   color: #d64000 !important;
@@ -133,7 +132,6 @@ input[type=radio] { /* radio */
   width: 1em;
   height: 1em;
   border-radius: 100%;
-  transition: all 300ms ease-out;
   box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
   outline: 1px solid rgba(40, 51, 82, .4);
   margin-bottom: 0px !important;
@@ -153,17 +151,14 @@ ol.at-steps.clearfix { /* donation step indicators */
 }
 .at .at-step>*:before{ /* donation step circles */
   border: none;
-  transition: all 300ms ease-out;
 }
 .at .at-step.active { /* donation active step indicator */
   border-bottom-color: #38aae1;
-  transition: all 300ms ease-out;
 }
 .step-title { /* donation step titles */
   color: #283351 !important;
   font-family:"Gotham Medium","Trebuchet MS",sans-serif;
   font-size: 15px;
-  transition: all 300ms ease-out;
 }
 input:-webkit-autofill, select:-webkit-autofill { /* removes autofill bg color */
   -webkit-text-fill-color: #283351;
@@ -180,20 +175,41 @@ input:-webkit-autofill, select:-webkit-autofill { /* removes autofill bg color *
 
 /* interactivity */
 label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
-  transition: all 300ms ease-out;
+  transition: all 200ms ease-out;
 }
 .at-btn-radio:hover{
   border: 1px solid #283351 !important;
 }
-input:where([type="text"], [type="tel"], [type="email"], [type="number"]):focus, select:focus { /* focus on input */
+input:where([type="text"], [type="tel"], [type="email"], [type="number"]&:not(.edit-otheramount)):focus, select:focus { /* focus on input */
   border-bottom: 1px solid rgba(40, 51, 82, 1) !important;
   box-shadow: none !important;
 }
-input:where([type="text"], [type="tel"], [type="email"], [type="number"]):hover, select:hover { /* hover on input */
+input:where([type="text"], [type="tel"], [type="email"], [type="number"]&:not(.edit-otheramount)):hover, select:hover { /* hover on input */
   border-bottom: 2px solid rgba(40, 51, 82, .4) !important;
 }
-
-
+.at input[type=checkbox]:hover+span:before { /* checkbox hover */
+  border: 1px solid rgba(40, 51, 82, 1) !important;
+  background-color: #F5F5F6 !important;
+}
+.at input[type=checkbox]:checked:hover+span:after { /*  checkmark hover */
+  color: #ff4d00 !important;
+}
+input[type=radio]:hover { /* radio hover */
+  outline: 1px solid rgba(40, 51, 82, 1);
+  &:checked{
+    background-color: #ff4d00;
+    border: 3px solid #F5F5F6;
+  }
+  &:not(:checked){
+    background-color: #F5F5F6;
+    border: none;
+  }
+}
+input[type=radio]:active {
+  background-color: #ff4d00;
+  border: 3px solid #F5F5F6;
+  outline: 1px solid rgba(40, 51, 82, 1);
+}
 
 
 /* fonts */ 
