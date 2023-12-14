@@ -5,7 +5,7 @@ body, html {
 /* removes main white background of body, header*/
 .at-inner {
   background-color: transparent !important;
-   /*max-width: 800px;*/
+  min-width: 100%;
 }
 .multistep-layout .HeaderHtml h1 {
   background-color: transparent !important;
