@@ -1,282 +1,273 @@
 body, html {
-    background-color: transparent !important;
-    height: 100%; 
+  background-color: transparent !important;
+  height: 100%; 
 }
 /* removes main white background of body, header*/
 .at-inner {
-    background-color: transparent !important;
-    max-width: 800px;
+  background-color: transparent !important;
+  max-width: 800px;
 }
 .multistep-layout .HeaderHtml h1 {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 
 /* text styling */
 /** lv 1 **/
 h1, h2, header.at-title { /* form titles */
-    color: #283351 !important;
-    text-align: left !important; 
-    font-family:"Alternate Gothic","Impact",sans-serif !important;
-    font-size: 55px !important;
+  color: #283351 !important;
+  text-align: left !important; 
+  font-family:"Alternate Gothic","Impact",sans-serif !important;
+  font-size: 55px !important;
 }
 .at fieldset legend, .at-markup.HeaderHtml p strong { /* "Contact Information" and "Opportunities Include" */
-    color: #283351 !important;
-    font-family:"Sentinel Italic","Impact",sans-serif !important;
-    font-size: 36px !important;
+  color: #283351 !important;
+  font-family:"Sentinel Italic","Impact",sans-serif !important;
+  font-size: 36px !important;
 }
 /** lv 2 **/
 h3 { /* subtitles */
-    color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
-    text-align: left !important; 
-    font-size: 18px;
+  color: #283351 !important;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+  text-align: left !important; 
+  font-size: 18px;
 }
 /** lv 3 **/
 h4, p, .at-markup.HeaderHtml p, .at-markup.HeaderHtml ul li span, .at-markup.HeaderHtml p span {
-    color: #283351 !important;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
-    text-align: left !important; 
-    font-size: 15px;
-    font-weight: normal;
+  color: #283351 !important;
+  font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
+  text-align: left !important; 
+  font-size: 15px;
+  font-weight: normal;
 }
 a {
-    color: #23589b !important;
+  color: #23589b !important;
 }
 small {
-    color: #a2abb4 !important;
-    font-variant: all-small-caps;
-    font-size: 18px;
+  color: #a2abb4 !important;
+  font-variant: all-small-caps;
+  font-size: 18px;
 }
 label {
-    color: #283351;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    text-align: left; 
-    font-size: 15px;
-    font-weight: normal;
+  color: #283351;
+  font-family:"Gotham Book","Trebuchet MS",sans-serif;
+  text-align: left; 
+  font-size: 15px;
+  font-weight: normal;
 }
 ul {
-    color: #283351 !important;
-    font-size: 15px;
+  color: #283351 !important;
+  font-size: 15px;
 }
 
 /* form content */
-  .at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"],
-   .oa-input-label { /* input field titles */
-    color: #283351;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-  }
-  .at-markup.LegalDescription p, .at-markup.SmsLegalDisclaimer p,
-   .at-markup.LegalHeaderHtml p { /* legal disclaimers */
-    color: #283351 !important;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    font-size: 15px;
-    font-style:italic;
-  }
-  .at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label, .updateMyProfileSection .text,
-  .radios label { /* checkbox/radio labels */
-    color: #283351;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-    line-height: 140%; /* keeps text inline w button element */
-  }
-  .at select, .at select:focus { /* dropdown menu options */
-    color: #283351;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    font-size: 15px;
-    border: none !important;
-    border-bottom: 1px solid rgba(40, 51, 82, .4) !important;
-    border-radius: 0px !important;
-  }
-  .at select:invalid, .at-text input::placeholder{ /* placeholder text */
-    color: #a2abb4 !important;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif;
-    font-size: 15px;
-  }
-  input[type=text], input[type=tel], input[type=email] { /* input boxes */
-    color: #283351 !important;
-    font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
-    font-size: 15px !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(40, 51, 82, .4) !important;
-    border-radius: 0px !important;
-  }
-  input[type=number]{ /* custom donation amount input */
-    color: #283351;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
-    font-size: 25px !important;
-    border-color: #cbccd1 !important;
-  }
-  input[type=number]::placeholder { /* custom donation placeholder */
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 25px;
-  }
-  label.label-amount, label.label-amount a { /* donation amount buttons */
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    border-radius: 5px !important;
-    transition: all 300ms ease-out;
-  }
+.at-row>[class^="at-text"], .at-row>[class^="at-date"],  .at-row>[class^="at-select"],
+ .oa-input-label { /* input field titles */
+  color: #283351;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 18px;
+}
+.at-markup.LegalDescription p, .at-markup.SmsLegalDisclaimer p,
+ .at-markup.LegalHeaderHtml p { /* legal disclaimers */
+  color: #283351 !important;
+  font-family:"Gotham Book","Trebuchet MS",sans-serif;
+  font-size: 15px;
+  font-style:italic;
+}
+.at-checkbox-title, .at-cover-costs-info, .at-check.authorize-payment-label, .updateMyProfileSection .text,
+.radios label { /* checkbox/radio labels */
+  color: #283351;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 18px;
+  line-height: 140%; /* keeps text inline w button element */
+}
+.at select:invalid, .at-text input::placeholder{ /* placeholder text */
+  color: #a2abb4 !important;
+  font-family:"Gotham Book","Trebuchet MS",sans-serif;
+  font-size: 15px;
+}
+input[type=text], input[type=tel], input[type=email], .at select, .at select:focus { /* input boxes */
+  color: #283351 !important;
+  font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
+  font-size: 15px !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(40, 51, 82, .4) !important;
+  border-radius: 0px !important;
+}
+input[type=number]{ /* custom donation amount input */
+  color: #283351;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif !important;
+  font-size: 25px !important;
+  border-color: #cbccd1 !important;
+}
+input[type=number]::placeholder { /* custom donation placeholder */
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 25px;
+}
+label.label-amount, label.label-amount a { /* donation amount buttons */
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  border-radius: 5px !important;
+  transition: all 300ms ease-out;
+}
 
 
-  /* ui */
-  .error { /* error message */
-    color: #d64000 !important;
-    & input {
-        border: 2px solid #d64000 !important;
-        background-color: rgba(255, 77, 0, .1) !important;
-    }
+/* ui */
+.error { /* error message */
+  color: #d64000 !important;
+  & input {
+      border: 2px solid #d64000 !important;
+      background-color: rgba(255, 77, 0, .1) !important;
   }
-  .at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
-    appearance: none;
-    border: 1px solid rgba(40, 51, 82, .4);
-    box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
-    background-color: #fff;
-    transition: all 300ms ease-out;
-  }
-  .at input[type=checkbox]:checked+span:before { /* checked checkbox */
-    background-color: #fff;
-    border: 1px solid rgba(40, 51, 82, .4);
-    box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
-    transition: all 300ms ease-out;
-  }
-  .at input[type=checkbox]:checked+span:after { /*  checkmark color */
-    color: #d64000 !important;
-    opacity: 1;
-    transform: scale(1);
-  }
-  input[type=radio], input[type=radio]:checked { /* selected radio */
-    appearance: none;
-    background-color: #d64000;
-    width: 1em;
-    height: 1em;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    outline: 1px solid rgba(40, 51, 82, .4);
-    margin-bottom: 0px;
-    transition: all 300ms ease-out;
-    box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
-  }
-  input[type="radio"]:not(:checked) { /* unselected radio */
-    appearance: none;
-    width: 1em;
-    height: 1em;
-    border-radius: 100%;
-    outline: 1px solid rgba(40, 51, 82, .4);
-    background-color: #fff;
-    margin-bottom: 0px;
-    transition: all 300ms ease-out;
-    box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
-  }
-  .at .at-steps { /* donation navbar */
-    background: #f1f3f5; 
-  }
-  ol.at-steps.clearfix { /* donation step indicators */
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-    line-height: 120%; /* centers number within circle */
-  }
-  .at .at-step>*:before{ /* donation step circles */
-    border: none;
-    transition: all 300ms ease-out;
-  }
-  .at .at-step.active { /* donation active step indicator */
-    border-bottom-color: #38aae1;
-    transition: all 300ms ease-out;
-  }
-  .step-title { /* donation step titles */
-    color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 15px;
-    transition: all 300ms ease-out;
-  }
-  input:-webkit-autofill { /* removes autofill bg color */
-    -webkit-text-fill-color: #283351;
-    -webkit-box-shadow: 0 0 0 100px white inset !important;
-    -webkit-font-feature-settings: on;
-  }
-  .at-btn-radio-wrapper input, .at-btn-radio-wrapper label { /* credit card/bank account buttons */
-    color: #283351 !important;
-    font-family:"Gotham Medium","Trebuchet MS",sans-serif;
-    font-size: 18px;
-    font-variant: all-small-caps;
-    border: 1px solid rgba(40, 51, 82, .4) !important;
-  }
+}
+.at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
+  appearance: none;
+  border: 1px solid rgba(40, 51, 82, .4);
+  box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
+  background-color: #fff;
+  transition: all 300ms ease-out;
+}
+.at input[type=checkbox]:checked+span:before { /* checked checkbox */
+  background-color: #fff;
+  border: 1px solid rgba(40, 51, 82, .4);
+  box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
+  transition: all 300ms ease-out;
+}
+.at input[type=checkbox]:checked+span:after { /*  checkmark color */
+  color: #d64000 !important;
+  opacity: 1;
+  transform: scale(1);
+}
+input[type=radio], input[type=radio]:checked { /* selected radio */
+  appearance: none;
+  background-color: #d64000;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  outline: 1px solid rgba(40, 51, 82, .4);
+  margin-bottom: 0px;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
+}
+input[type="radio"]:not(:checked) { /* unselected radio */
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  outline: 1px solid rgba(40, 51, 82, .4);
+  background-color: #fff;
+  margin-bottom: 0px;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 0px 4px 0px rgba(40, 51, 82, 0.2) !important;
+}
+.at .at-steps { /* donation navbar */
+  background: #f1f3f5; 
+}
+ol.at-steps.clearfix { /* donation step indicators */
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 18px;
+  line-height: 120%; /* centers number within circle */
+}
+.at .at-step>*:before{ /* donation step circles */
+  border: none;
+  transition: all 300ms ease-out;
+}
+.at .at-step.active { /* donation active step indicator */
+  border-bottom-color: #38aae1;
+  transition: all 300ms ease-out;
+}
+.step-title { /* donation step titles */
+  color: #283351 !important;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 15px;
+  transition: all 300ms ease-out;
+}
+input:-webkit-autofill { /* removes autofill bg color */
+  -webkit-text-fill-color: #283351;
+  -webkit-box-shadow: 0 0 0 100px white inset !important;
+  -webkit-font-feature-settings: on;
+}
+.at-btn-radio-wrapper input, .at-btn-radio-wrapper label { /* credit card/bank account buttons */
+  color: #283351 !important;
+  font-family:"Gotham Medium","Trebuchet MS",sans-serif;
+  font-size: 18px;
+  font-variant: all-small-caps;
+  border: 1px solid rgba(40, 51, 82, .4) !important;
+}
 
-  /* interactivity */
-  label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
-    transition: all 300ms ease-out;
-  }
-  .at-btn-radio:hover{
-    border: 1px solid #283351 !important;
-  }
-  input:where([type="text"], [type="tel"], [type="email"], [type="number"]):focus, select:focus { /* focus on input */
-    border-bottom: 1px solid rgba(40, 51, 82, 1) !important;
-    box-shadow: none !important;
-  }
-  input:where([type="text"], [type="tel"], [type="email"], [type="number"]):hover, select:hover { /* hover on input */
-    border-bottom: 2px solid rgba(40, 51, 82, .4) !important;
-  }
+/* interactivity */
+label.label-amount:hover, label.label-amount a:hover { /* basic hover transition */
+  transition: all 300ms ease-out;
+}
+.at-btn-radio:hover{
+  border: 1px solid #283351 !important;
+}
+input:where([type="text"], [type="tel"], [type="email"], [type="number"]):focus, select:focus { /* focus on input */
+  border-bottom: 1px solid rgba(40, 51, 82, 1) !important;
+  box-shadow: none !important;
+}
+input:where([type="text"], [type="tel"], [type="email"], [type="number"]):hover, select:hover { /* hover on input */
+  border-bottom: 2px solid rgba(40, 51, 82, .4) !important;
+}
 
 
 
 
 /* fonts */ 
 @font-face {
-    font-family: 'Gotham Medium';
-    src: URL('/fonts/Gotham-Medium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Gotham Medium';
+  src: URL('/fonts/Gotham-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Medium';
-    src: URL('/fonts/Gotham-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Gotham Medium';
+  src: URL('/fonts/Gotham-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Medium';
-    src: URL('/fonts/GothamMediumItalic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: normal;
+  font-family: 'Gotham Medium';
+  src: URL('/fonts/GothamMediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Medium';
-    src: URL('/fonts/GothamBoldItalic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: bold;
+  font-family: 'Gotham Medium';
+  src: URL('/fonts/GothamBoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Gotham Book';
-    src: URL('/fonts/Gotham-Book.otf') format('opentype');
-    font-weight: lighter;
-    font-style: normal;
+  font-family: 'Gotham Book';
+  src: URL('/fonts/Gotham-Book.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Black';
-    src: URL('/fonts/Gotham-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Gotham Black';
+  src: URL('/fonts/Gotham-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Alternate Gothic';
-    src: URL('/fonts/alternate-gothic-no3-d.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Alternate Gothic';
+  src: URL('/fonts/alternate-gothic-no3-d.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sentinel Italic';
-    src: URL('/fonts/Sentinel-MediumItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Sentinel Italic';
+  src: URL('/fonts/Sentinel-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
-
 
 
