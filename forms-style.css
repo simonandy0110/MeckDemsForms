@@ -161,7 +161,7 @@ ol.at-steps.clearfix { /* donation step indicators */
   border: 1px solid rgba(40, 51, 82, .4) !important;
 }
 a.circle { /* fastaction What's This? button */
-  color: #fff; 
+  color: #fff !important; 
 }
 input[type="submit"], button.submitStep.btn-at.btn-at-primary, 
 a.nextStep.btn-at.btn-at-primary { /* next/submit buttons */
