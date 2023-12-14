@@ -86,7 +86,7 @@ ul {
   font-family:"Gotham Book","Trebuchet MS",sans-serif;
   font-size: 15px;
 }
-input[type=text], input[type=tel], input[type=email], .at select, .at select:focus { /* input boxes */
+input[type=text], input[type=tel], input[type=email], .at select { /* input boxes */
   color: #283351 !important;
   font-family:"Gotham Book","Trebuchet MS",sans-serif !important;
   font-size: 15px !important;
@@ -115,8 +115,7 @@ label.label-amount, label.label-amount a { /* donation amount buttons */
 .error { /* error message */
   color: #d64000 !important;
   & input {
-      border: 2px solid #d64000 !important;
-      background-color: rgba(255, 77, 0, .1) !important;
+      border-bottom: 2px solid #d64000 !important;
   }
 }
 .at input[type=checkbox]:not(:checked)+span:before { /* unchecked checkbox */
